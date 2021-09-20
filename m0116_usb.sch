@@ -550,16 +550,12 @@ Text GLabel 2300 7850 1    50   Input ~ 0
 MISO
 Text GLabel 2200 7850 1    50   Input ~ 0
 MOSI
-Wire Wire Line
-	6750 7700 6550 7700
-Text GLabel 6750 7700 2    50   Input ~ 0
+Text GLabel 14350 3850 2    50   Input ~ 0
 SCK
 Text GLabel 2100 7850 1    50   Input ~ 0
 boot_jp
-Text GLabel 6300 7900 3    50   Input ~ 0
+Text GLabel 13950 3750 0    50   Input ~ 0
 boot_jp
-Wire Wire Line
-	6300 7900 6300 7800
 Wire Wire Line
 	3300 5350 5500 5350
 Wire Wire Line
@@ -575,17 +571,6 @@ Wire Wire Line
 	4400 1250 4400 1300
 Wire Wire Line
 	4550 850  4650 850 
-$Comp
-L Device:Jumper_NC_Dual JP1
-U 1 1 62328914
-P 6300 7700
-F 0 "JP1" H 6300 7939 50  0000 C CNN
-F 1 "Jumper_NC_Dual" H 6300 7848 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm" H 6300 7700 50  0001 C CNN
-F 3 "~" H 6300 7700 50  0001 C CNN
-	1    6300 7700
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0101
 U 1 1 622C2B25
@@ -3412,7 +3397,7 @@ Wire Wire Line
 	4100 7550 4100 7850
 Text GLabel 3700 7850 1    50   Input ~ 0
 col5
-Text GLabel 6050 7700 0    50   Input ~ 0
+Text GLabel 14350 3650 2    50   Input ~ 0
 col13
 Text GLabel 3300 7850 1    50   Input ~ 0
 col3
@@ -3420,4 +3405,15 @@ Text Label 14350 8050 0    50   ~ 0
 D1+
 Text Label 13450 8050 0    50   ~ 0
 D1-
+$Comp
+L Switch:SW_SPDT SW2
+U 1 1 61528A13
+P 14150 3750
+F 0 "SW2" H 14150 4035 50  0000 C CNN
+F 1 "SW_SPDT" H 14150 3944 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPDT_CK-JS102011SAQN" H 14150 3750 50  0001 C CNN
+F 3 "~" H 14150 3750 50  0001 C CNN
+	1    14150 3750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
